@@ -7,15 +7,12 @@ function capitalizarPrimeraLetra(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-export default function Home({ pokemons, minDatos }) {
+export default function PokemonPage({ pokemons, minDatos }) {
   return (
     <>
         <h1 className={styles.title}>
           Explorar Pokedex
         </h1>
-        <div>
-          <input type="text" placeholder="Buscar Pokémon" className={styles.cssinput}/>
-        </div>
       <div className={styles.grid}>
           {
             minDatos.map(pokemon => {
@@ -81,3 +78,6 @@ export async function getStaticProps () {
     }
   }
 }
+// ARREGLAR REDIRECCION :))
+// ARREGLAR REDIRECCION :))
+// ARREGLAR REDIRECCION :))
