@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -57,11 +58,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer mt-auto py-3 bg-light">
-        <div className="container">
-          <span id='footer' className="text-muted text-center">Proyecto de NextJS realizado por Franco Piccirilli.</span>
-        </div>
-       </footer>
+      <Footer/>
       <script 
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
