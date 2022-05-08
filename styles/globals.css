@@ -13,6 +13,14 @@ a {
 
 * {
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+#pokemonType {
+  padding: 1.5px;
+  border-radius: 2px;
+  font-size: 15px;
+  opacity: 0.8;
 }
 
 .bug {
@@ -37,6 +45,7 @@ a {
 
 .poison {
   background: #611380;
+  color: #ffffff;
 }
 
 .electric {
@@ -86,4 +95,10 @@ a {
 
 .shadow {
   background: #4f4f4f;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

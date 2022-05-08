@@ -15,6 +15,9 @@ export default function Home({ pokemons, minDatos }) {
         <Head>
           <title>PokeNextJS - Pokemon Dex</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous"></link>
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+          <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;900&display=swap" rel="stylesheet"></link>
         </Head>
         <Navbar/>
         <h1 className={styles.title}>
@@ -38,7 +41,7 @@ export default function Home({ pokemons, minDatos }) {
                     <p>{capitalizarPrimeraLetra(pokemon.name)}</p>
                     {pokemon.types.map((tipos, index) => {
                       return (
-                        <span key={index} className={styles.tipos}>
+                        <span key={index} className={tipos.type.name} id="pokemonType">
                           {tipos.type.name}
                           <br/>
                         </span>
